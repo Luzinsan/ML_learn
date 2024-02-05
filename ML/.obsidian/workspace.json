@@ -1,0 +1,188 @@
+{
+  "main": {
+    "id": "5241539882feae6f",
+    "type": "split",
+    "children": [
+      {
+        "id": "ea55e26f48205a83",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "23d7812fdfcd1596",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Ресурс/Линейная алгебра/Линейная алгебра.canvas",
+                "viewState": {
+                  "x": 443.1928951629201,
+                  "y": 152.90205743433006,
+                  "zoom": -0.6875827592872986
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "505b4971952efe47",
+    "type": "split",
+    "children": [
+      {
+        "id": "428d6bd34dff6996",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "13bbdd6946571632",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e72a6297e7b44303",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "направленны",
+                "matchingCase": false,
+                "explainSearch": true,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ae52494bedec414a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 383.5
+  },
+  "right": {
+    "id": "c2d1d21583a26691",
+    "type": "split",
+    "children": [
+      {
+        "id": "4f5da8ee17343d43",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "245dbcb2b9cb1b64",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Ресурс/Линейная алгебра/Абстрактные векторные пространства.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "68afb17ae708b520",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Ресурс/Линейная алгебра/Абстрактные векторные пространства.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "197767ff987f49a8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "fb6feef8c04bde7c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Ресурс/Линейная алгебра/Абстрактные векторные пространства.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "13bbdd6946571632",
+  "lastOpenFiles": [
+    "Ресурс/Линейная алгебра/Матрица - линейная трансформация.md",
+    "Картинки/Линейная алгебра/Аксиомы линейного пространства.png",
+    "Ресурс/Линейная алгебра/Линейная алгебра.canvas",
+    "Картинки/Линейная алгебра/Композиция функций на входе.png",
+    "Ресурс/Линейная алгебра/Абстрактные векторные пространства.md",
+    "Ресурс/Линейная алгебра/Вектор.md",
+    "Картинки/Линейная алгебра/Масштабирование функции.png",
+    "Картинки/Линейная алгебра/Линейная трансформация функции.png",
+    "Картинки/Линейная алгебра/Композиция функций на выходе.png",
+    "Ресурс/Линейная алгебра/Собственный базис.md",
+    "Ресурс/Линейная алгебра/Базис векторного пространства.md",
+    "Картинки/Линейная алгебра/Трансформация 2D -> 1D.png",
+    "Ресурс/Линейная алгебра/Собственные числа и вектора.md",
+    "Картинки/Линейная алгебра/СЛАУ в геометрическом виде.png",
+    "Ресурс/Линейная алгебра/Пространство столбцов и ранг.md",
+    "Картинки/Линейная алгебра/Определитель.png",
+    "Картинки/Линейная алгебра/Нахождение собственный чисел -1.png",
+    "Картинки/Линейная алгебра/Композиция матриц.png",
+    "Ресурс/Линейная алгебра/Векторное произведение в 2D.md",
+    "Ресурс/Линейная алгебра/Трансформации в других пространствах.md",
+    "Векторы.md",
+    "Ресурс/Линейная алгебра/Векторное произведение в 3D.md",
+    "Ресурс/Линейная алгебра/Скалярное произведение и двойственность.md",
+    "Ресурс/Линейная алгебра/Неквадратные матрицы.md",
+    "Ресурс/Линейная алгебра/СЛАУ.md",
+    "Ресурс/Линейная алгебра/Определитель.md",
+    "Ресурс/Линейная алгебра/Композиция матриц.md",
+    "Ресурс/Линейная алгебра",
+    "Ресурс",
+    "Картинки/Линейная алгебра",
+    "Картинки",
+    "Картинки/Линейная алгебра",
+    "Welcome.md"
+  ]
+}
