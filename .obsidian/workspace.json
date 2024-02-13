@@ -1,0 +1,154 @@
+{
+  "main": {
+    "id": "f0ca579a8e3d3300",
+    "type": "split",
+    "children": [
+      {
+        "id": "1d698491a5f0ea29",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ead42d52d80f8d1f",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "ML/Ресурс/Линейная алгебра/Линейная алгебра.canvas",
+                "viewState": {
+                  "x": 870,
+                  "y": 285,
+                  "zoom": -0.8926622346821107
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cccef97552c479a2",
+    "type": "split",
+    "children": [
+      {
+        "id": "8fc5a273f2e64791",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "12b507aa91d5fe73",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "efde3b699327ab4e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2a01040de493f9c0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "11576059710852e5",
+    "type": "split",
+    "children": [
+      {
+        "id": "6eeb445e1cf42425",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d53fb10127d8ec2e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ML/Ресурс/Линейная алгебра/Линейная алгебра.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4a83fc9a913074af",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "ML/Ресурс/Линейная алгебра/Линейная алгебра.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "891b77fbb05c4850",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "b85718de8d9ceae3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "ML/Ресурс/Линейная алгебра/Линейная алгебра.canvas"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "12b507aa91d5fe73",
+  "lastOpenFiles": []
+}
