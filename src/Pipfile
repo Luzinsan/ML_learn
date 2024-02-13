@@ -12,6 +12,8 @@ pyarrow = "*"
 seaborn = "*"
 scipy = "*"
 scikit-learn = "*"
+pydotplus = "*"
+graphviz = "*"
 
 [dev-packages]
 
