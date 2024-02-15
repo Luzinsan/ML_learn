@@ -17,7 +17,7 @@
 		{"id":"4376580f53fbba2c","type":"file","file":"Ресурс/Линейная алгебра/Пространство столбцов и ранг.md","x":680,"y":-120,"width":400,"height":200},
 		{"id":"b9b850f87ee9c68d","type":"file","file":"Ресурс/Линейная алгебра/Вектор.md","x":60,"y":-320,"width":460,"height":120},
 		{"id":"2935a730a3089f8f","type":"file","file":"Ресурс/Линейная алгебра/Определитель.md","x":680,"y":-320,"width":400,"height":160},
-		{"id":"844e04148ac3a4d2","type":"file","file":"Команды.md","x":2540,"y":-180,"width":1720,"height":500}
+		{"id":"844e04148ac3a4d2","type":"file","file":"Инструменты/git.md","x":2540,"y":-180,"width":1720,"height":500}
 	],
 	"edges":[
 		{"id":"7e6862b87393a80c","fromNode":"b9b850f87ee9c68d","fromSide":"bottom","toNode":"51b36779c61930d0","toSide":"top"},

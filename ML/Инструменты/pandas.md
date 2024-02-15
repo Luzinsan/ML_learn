@@ -44,6 +44,9 @@ https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.set_option.htm
   - `df.drop()` - удаление строк (`axis=0` по умолчанию) или столбцов
 	  - `columns=[]` или `axis=1` - удаляет указанные столбцы
 	  - `[row_names]` - удаляет указанные строки
+- `pd.get_dummies(df)` - `one-hot-encoding` в pandas
+	- `dummy_na=True` - позволяет воспринимать` pd.NaN` как отдельную категорию
+- `df.fillna(value)` - замена значений `pd.NaN` на значение `value`
   
 ## Feature Extraction
 - `df['New_Col'] = df['Col1'] + df['Col2']` - комбинация столбцов для получения нового признака
