@@ -127,10 +127,46 @@ class DataModule(d2l.HyperParameters):  #@save
 
     def val_dataloader(self):
         return self.get_dataloader(train=False)
+
+	# Модификация 3.3.3
+	def get_tensorloader(self, tensors, train, indices=slice(0, None)):
+	    tensors = tuple(a[indices] for a in tensors)
+	    dataset = torch.utils.data.TensorDataset(*tensors)
+	    return torch.utils.data.DataLoader(dataset, self.batch_size,
+	                                       shuffle=train)
 ```
 - `__init__()` - конструктор, отвечающий за подговку данных: загрузку, предварительную обработку, если это необходимо
 - `train_dataloader()` - возвращает загрузчик данных для обучающего набора данных - генератор, возвращающий minibatch на каждый его вызов (далее этот minibatch поступает в метод training_step класса Module)
 - `val_dataloader()` - возвращает загрузчик набора валидационных (проверочных) данных.
+> Data Loader - удобный способ абстрагировать процесс загрузки и управления данными. Их можно компоновать
+> Т.о. Один и тот же алгоритм может обрабатывать множество различных типов и источников данных без необходимости модификации.
+> Могут использоваться для описания всего пайплайна обработки данных. 
+## SyntheticRegressionData
+```python
+class SyntheticRegressionData(d2l.DataModule):  #@save
+    """Synthetic data for linear regression."""
+    def __init__(self, w, b, noise=0.01, num_train=1000, num_val=1000,
+                 batch_size=32):
+        super().__init__()
+        self.save_hyperparameters()
+        n = num_train + num_val
+        self.X = torch.randn(n, len(w))
+        noise = torch.randn(n, 1) * noise
+        self.y = torch.matmul(self.X, w.reshape((-1, 1))) + b + noise
+        
+    # Модификация 3.3.3
+    def get_dataloader(self, train):
+	    i = slice(0, self.num_train) if train else slice(self.num_train, None)
+	    return self.get_tensorloader((self.X, self.y), train, i)
+```
+> Использование:
+```python
+data = SyntheticRegressionData(w=torch.tensor([2, -3.4]), b=4.2)
+X, y = next(iter(data.train_dataloader()))
+print('X shape:', X.shape, '\ny shape:', y.shape)
+# torch.utils.data.DataLoader предоставляет встроенные методы. Например:
+len(data.train_dataloader()) # ==> 32 - кол-во minibatch'ей
+```
 # Trainer
 ```python
 class Trainer(d2l.HyperParameters):  #@save
