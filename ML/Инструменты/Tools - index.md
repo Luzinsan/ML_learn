@@ -1,0 +1,8 @@
+[[git]]
+[[numpy]]
+[[plotly]]
+[[pandas]]
+[[seaborn]]
+[[torch]]
+[[Visual Code]]
+[[Linux]]
