@@ -25,7 +25,7 @@ $$\hat{y} = w_1 x_1 + \cdots + w_d x_d + b.$$
 > - Представляет собой неотрицательное число, где "чем меньше, тем лучше"
 > - Для задач регрессии наиболее распространённая - среднеквадратичная ошибка (MSE)
 
-## Среднеквадратичная ошибка
+### Среднеквадратичная ошибка
 > Рассматривая одно наблюдение:$$l^{(i)}(\mathbf{w},b) = \frac{1}{2}(\hat{y}^{i} - y^{(i)})^2$$
 > $\frac{1}{2}$ - константа уходит при дифференцировании
 > Fitting (аппроксимация) модели линейной регрессии к одномерным данным:![[Pasted image 20240219124412.png]]
@@ -72,3 +72,43 @@ $$\hat{y} = w_1 x_1 + \cdots + w_d x_d + b.$$
 Входные данные сети: x_1, ..., x_d - где d - размерность признакового пространства во сходном слое.
 Выход сети o_1.
 Все входные значения заданы и есть только 1 вычисляемый нейрон => линейную регрессию можно рассматривать как однослойную полносвязную нейронную сеть (single-layer fully connected neural network)
+
+# Использование LazyLinear
+```python
+class LinearRegression(d2l.Module):  #@save
+    """The linear regression model implemented with high-level APIs."""
+    def __init__(self, lr):
+        super().__init__()
+        self.save_hyperparameters()
+        self.net = nn.LazyLinear(1)
+        self.net.weight.data.normal_(0, 0.01)
+        self.net.bias.data.fill_(0)
+    
+    def forward(self, X):
+	    return self.net(X)
+
+	def loss(self, y_hat, y):
+	    fn = nn.MSELoss()
+	    return fn(y_hat, y)
+
+	def configure_optimizers(self):
+	    return torch.optim.SGD(self.parameters(), self.lr)
+
+	def get_w_b(self):
+	    return (self.net.weight.data, self.net.bias.data)
+```
+## Обучение
+```python
+model = LinearRegression(lr=0.03)
+data = d2l.SyntheticRegressionData(w=torch.tensor([2, -3.4]), b=4.2)
+trainer = d2l.Trainer(max_epochs=3)
+trainer.fit(model, data)
+
+
+w, b = model.get_w_b()
+
+print(f'error in estimating w: {data.w - w.reshape(data.w.shape)}')
+print(f'error in estimating b: {data.b - b}')
+# error in estimating w: tensor([ 0.0094, -0.0030])
+# error in estimating b: tensor([0.0137])
+```
