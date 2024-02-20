@@ -1,4 +1,7 @@
 [
   "obsidian-git",
-  "theme-picker"
+  "theme-picker",
+  "dataview",
+  "excalibrain",
+  "obsidian-excalidraw-plugin"
 ]
