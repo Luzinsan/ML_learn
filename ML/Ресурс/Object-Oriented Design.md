@@ -134,6 +134,17 @@ class LinearRegressionScratch(d2l.Module):  #@save
 ```
 - `forward()` - [[Linear Regression#Model]]
 - `loss()` - [[Linear Regression#Функция потерь - Loss Function]]
+### WeightDecayScratch
+```python
+class WeightDecayScratch(d2l.LinearRegressionScratch):
+    def __init__(self, num_inputs, lambd, lr, sigma=0.01):
+        super().__init__(num_inputs, lr, sigma)
+        self.save_hyperparameters()
+
+    def loss(self, y_hat, y):
+        return (super().loss(y_hat, y) +
+                self.lambd * l2_penalty(self.w))
+```
 ## SGD
 ```python
 class SGD(d2l.HyperParameters):  #@save
@@ -206,6 +217,27 @@ print('X shape:', X.shape, '\ny shape:', y.shape)
 # torch.utils.data.DataLoader предоставляет встроенные методы. Например:
 len(data.train_dataloader()) # ==> 32 - кол-во minibatch'ей
 ```
+## Weight Decay
+> Синтетический набор данных для иллюстрации weight decay
+```python
+class Data(d2l.DataModule):
+    def __init__(self, num_train, num_val, num_inputs, batch_size):
+        self.save_hyperparameters()
+        n = num_train + num_val
+        self.X = torch.randn(n, num_inputs)
+        noise = torch.randn(n, 1) * 0.01
+        w, b = torch.ones((num_inputs, 1)) * 0.01, 0.05
+        self.y = torch.matmul(self.X, w) + b + noise
+
+    def get_dataloader(self, train):
+        i = slice(0, self.num_train) if train else slice(self.num_train, None)
+        return self.get_tensorloader([self.X, self.y], train, i)
+```
+
+```python
+def l2_penalty(w):
+    return (w ** 2).sum() / 2
+```
 # Trainer
 ```python
 class Trainer(d2l.HyperParameters):  #@save
@@ -262,6 +294,7 @@ class Trainer(d2l.HyperParameters):  #@save
 ```
 - `fit()` - метод, принимающий model (экз. класса `Module`) и data (экз. класса `DataModule`). Метод итерирует по всему набору данных столько раз, сколько указано в `max_epochs`. 
 # Обучение
+## Linear Regression
 1. Инициализируются параметры: $(\mathbf{w},b)$
 2. Цикл до точки остановы:
 	1. Вычисляется градиент: $\mathbf{g} \leftarrow \partial_{(\mathbf{w},b)}\frac{1}{|\mathcal{B}|}\sum_{i \in \mathcal{B}}l(\mathbf{x}^{(i)},y^{(i)}, \mathbf{w}, b)$ 
@@ -274,9 +307,20 @@ trainer = d2l.Trainer(max_epochs=3)
 trainer.fit(model, data)
 ```
 
-## Проверка весов
+### Проверка весов
 ```python
 with torch.no_grad():
     print(f'error in estimating w: {data.w - model.w.reshape(data.w.shape)}')
     print(f'error in estimating b: {data.b - model.b}')
+```
+## WeightDecay for Linear Regression
+```python
+data = Data(num_train=20, num_val=100, num_inputs=200, batch_size=5)
+trainer = d2l.Trainer(max_epochs=10)
+
+def train_scratch(lambd):
+    model = WeightDecayScratch(num_inputs=200, lambd=lambd, lr=0.01)
+    model.board.yscale='log'
+    trainer.fit(model, data)
+    print('L2 norm of w:', float(l2_penalty(model.w)))
 ```
