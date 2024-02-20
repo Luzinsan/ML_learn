@@ -1,3 +1,9 @@
 {
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "readableLineLength": false,
+  "showLineNumber": true,
+  "rightToLeft": false,
+  "showIndentGuide": true,
+  "vimMode": false,
+  "trashOption": "local"
 }
