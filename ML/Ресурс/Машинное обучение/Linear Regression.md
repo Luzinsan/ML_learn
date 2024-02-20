@@ -67,28 +67,7 @@ $$\hat{y} = w_1 x_1 + \cdots + w_d x_d + b.$$
 
 Качество решения оценивается на validation set (проверочном наборе данных).
 
-## Weight Decay
-- Настраиваем регуляризацию только для весов
-```python
-class WeightDecay(d2l.LinearRegression):
-    def __init__(self, wd, lr):
-        super().__init__(lr)
-        self.save_hyperparameters()
-        self.wd = wd
 
-    def configure_optimizers(self):
-        return torch.optim.SGD([
-            {'params': self.net.weight, 'weight_decay': self.wd},
-            {'params': self.net.bias}], lr=self.lr)
-```
-- Использование:
-```python
-model = WeightDecay(wd=3, lr=0.01)
-model.board.yscale='log'
-trainer.fit(model, data)
-
-print('L2 norm of w:', float(l2_penalty(model.get_w_b()[0])))
-```
 # Linear Regression as a Neural Network
 ![[Pasted image 20240219144646.png]]
 Входные данные сети: x_1, ..., x_d - где d - размерность признакового пространства во сходном слое.
@@ -133,4 +112,27 @@ print(f'error in estimating w: {data.w - w.reshape(data.w.shape)}')
 print(f'error in estimating b: {data.b - b}')
 # error in estimating w: tensor([ 0.0094, -0.0030])
 # error in estimating b: tensor([0.0137])
+```
+
+## Weight Decay
+- Настраиваем регуляризацию только для весов
+```python
+class WeightDecay(d2l.LinearRegression):
+    def __init__(self, wd, lr):
+        super().__init__(lr)
+        self.save_hyperparameters()
+        self.wd = wd
+
+    def configure_optimizers(self):
+        return torch.optim.SGD([
+            {'params': self.net.weight, 'weight_decay': self.wd},
+            {'params': self.net.bias}], lr=self.lr)
+```
+- Использование:
+```python
+model = WeightDecay(wd=3, lr=0.01)
+model.board.yscale='log'
+trainer.fit(model, data)
+
+print('L2 norm of w:', float(l2_penalty(model.get_w_b()[0])))
 ```
