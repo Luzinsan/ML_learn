@@ -12,6 +12,7 @@ torchvision = "*"
 pyarrow = "*"
 ucimlrepo = "*"
 d2l = "*"
+plotly = "*"
 
 [dev-packages]
 ipykernel = "*"
