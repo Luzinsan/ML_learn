@@ -2,8 +2,8 @@
 	"nodes":[
 		{"id":"ffde575ba5c0df38","type":"group","x":2473,"y":2202,"width":3647,"height":2038,"label":"Машинное обучение"},
 		{"id":"06e44a378be66d3a","type":"group","x":-460,"y":2160,"width":2660,"height":1470,"label":"Инструменты"},
-		{"id":"d2e3023aab8b7730","type":"group","x":2560,"y":3111,"width":3480,"height":1038,"label":"Глубокое обучение"},
 		{"id":"aec1cb0ac708304e","type":"group","x":-460,"y":-370,"width":2660,"height":1310,"color":"4","label":"Линейная алгебра"},
+		{"id":"d2e3023aab8b7730","type":"group","x":2560,"y":3360,"width":3480,"height":789,"label":"Глубокое обучение"},
 		{"id":"cdfbfa5cf0da0424","type":"group","x":-460,"y":1200,"width":2660,"height":680,"label":"Математический анализ"},
 		{"id":"db1b2697e8cbd35c","type":"file","file":"Ресурс/Машинное обучение/Линейная алгебра/Абстрактные векторные пространства.md","x":-380,"y":-190,"width":360,"height":266},
 		{"id":"e1979441c9193979","type":"file","file":"Ресурс/Машинное обучение/Математический анализ/Производная.md","x":-400,"y":1280,"width":400,"height":389},
@@ -27,9 +27,16 @@
 		{"id":"2f46847a344f03c0","type":"file","file":"Ресурс/Машинное обучение/Линейная алгебра/Неквадратные матрицы.md","x":1196,"y":120,"width":400,"height":183},
 		{"id":"f8486e6eac8fa0d5","type":"file","file":"Ресурс/Машинное обучение/Линейная алгебра/Векторное произведение в 3D.md","x":1720,"y":-320,"width":440,"height":455},
 		{"id":"1c049221aa84bf7e","type":"file","file":"Ресурс/Машинное обучение/Линейная алгебра/Скалярное произведение и двойственность.md","x":1720,"y":183,"width":440,"height":240},
-		{"id":"671028a12f7f871b","type":"file","file":"Ресурс/Машинное обучение/Деревья решения.md","x":3069,"y":2280,"width":400,"height":400},
 		{"id":"c0ab8e52967a8651","type":"file","file":"Ресурс/Машинное обучение/Анализ данных/Visual Exploration of Data.md","x":2560,"y":2280,"width":400,"height":400},
-		{"id":"b83d145481d6ffbd","x":90,"y":1280,"width":400,"height":400,"type":"file","file":"Ресурс/Машинное обучение/Математический анализ/Calculus - Дифференциальное исчисление.md"}
+		{"id":"b83d145481d6ffbd","type":"file","file":"Ресурс/Машинное обучение/Математический анализ/Calculus - Дифференциальное исчисление.md","x":90,"y":1280,"width":400,"height":400},
+		{"id":"532d6ab0f31e0d36","x":3600,"y":2280,"width":400,"height":400,"type":"file","file":"Ресурс/Машинное обучение/Linear Regression.md"},
+		{"id":"0d7671c2776d68c6","x":4120,"y":2280,"width":400,"height":400,"type":"file","file":"Ресурс/Машинное обучение/Softmax Regression.md"},
+		{"id":"fbe53189ae0d247c","x":4120,"y":2800,"width":400,"height":400,"type":"file","file":"Ресурс/Машинное обучение/Weight Decay - Затухание веса.md"},
+		{"id":"d93c19c266fca788","x":3600,"y":2800,"width":400,"height":400,"type":"file","file":"Ресурс/Машинное обучение/Generalization.md"},
+		{"id":"2cc48cc412c3efe5","x":4640,"y":2800,"width":400,"height":400,"type":"file","file":"Ресурс/Энтропия.md"},
+		{"id":"671028a12f7f871b","type":"file","file":"Ресурс/Машинное обучение/Деревья решений.md","x":3080,"y":2800,"width":400,"height":400},
+		{"id":"905cf8ce025fa117","x":3280,"y":3480,"width":400,"height":400,"type":"file","file":"Ресурс/Машинное обучение/Глубокое обучение/Image Augmentation.md"},
+		{"id":"754e64286f5b01ac","x":2680,"y":3480,"width":400,"height":400,"type":"file","file":"Ресурс/Машинное обучение/Глубокое обучение/Компьютерное зрение - Computer Vision.md"}
 	],
 	"edges":[
 		{"id":"7e6862b87393a80c","fromNode":"b9b850f87ee9c68d","fromSide":"bottom","toNode":"51b36779c61930d0","toSide":"top"},
@@ -46,6 +53,11 @@
 		{"id":"dab77a66c4114b0b","fromNode":"d865f3431b3a3a1a","fromSide":"right","toNode":"eaec53a951b33d0b","toSide":"left"},
 		{"id":"87f4c40992e816a8","fromNode":"eaec53a951b33d0b","fromSide":"right","toNode":"f4d241b0b681c138","toSide":"left"},
 		{"id":"d7f17e24e93504f9","fromNode":"4f59c0a018b57e28","fromSide":"right","toNode":"f4d241b0b681c138","toSide":"top"},
-		{"id":"fe2464aadb8e3fe9","fromNode":"51b36779c61930d0","fromSide":"left","toNode":"db1b2697e8cbd35c","toSide":"right"}
+		{"id":"fe2464aadb8e3fe9","fromNode":"51b36779c61930d0","fromSide":"left","toNode":"db1b2697e8cbd35c","toSide":"right"},
+		{"id":"7b92d226f9952aeb","fromNode":"0d7671c2776d68c6","fromSide":"bottom","toNode":"fbe53189ae0d247c","toSide":"top"},
+		{"id":"d8adea6b918f00d4","fromNode":"532d6ab0f31e0d36","fromSide":"bottom","toNode":"d93c19c266fca788","toSide":"top"},
+		{"id":"01d46b870497f0fa","fromNode":"0d7671c2776d68c6","fromSide":"right","toNode":"2cc48cc412c3efe5","toSide":"top"},
+		{"id":"eaa3702d8cea503e","fromNode":"671028a12f7f871b","fromSide":"bottom","toNode":"2cc48cc412c3efe5","toSide":"bottom"},
+		{"id":"783cc7b5b2e70433","fromNode":"754e64286f5b01ac","fromSide":"right","toNode":"905cf8ce025fa117","toSide":"left"}
 	]
 }

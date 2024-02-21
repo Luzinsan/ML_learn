@@ -1,0 +1,2 @@
+[[Linear Regression]]
+[[Softmax Regression]] 
