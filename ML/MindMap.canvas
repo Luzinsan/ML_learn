@@ -32,7 +32,7 @@
 		{"id":"532d6ab0f31e0d36","x":3600,"y":2280,"width":400,"height":400,"type":"file","file":"Ресурс/Машинное обучение/Linear Regression.md"},
 		{"id":"0d7671c2776d68c6","x":4120,"y":2280,"width":400,"height":400,"type":"file","file":"Ресурс/Машинное обучение/Softmax Regression.md"},
 		{"id":"fbe53189ae0d247c","x":4120,"y":2800,"width":400,"height":400,"type":"file","file":"Ресурс/Машинное обучение/Weight Decay - Затухание веса.md"},
-		{"id":"d93c19c266fca788","x":3600,"y":2800,"width":400,"height":400,"type":"file","file":"Ресурс/Машинное обучение/Generalization (Regression).md"},
+		{"id":"d93c19c266fca788","x":3600,"y":2800,"width":400,"height":400,"type":"file","file":"Ресурс/Машинное обучение/Generalizations/Generalization (Regression).md"},
 		{"id":"2cc48cc412c3efe5","x":4640,"y":2800,"width":400,"height":400,"type":"file","file":"Ресурс/Энтропия.md"},
 		{"id":"671028a12f7f871b","type":"file","file":"Ресурс/Машинное обучение/Деревья решений.md","x":3080,"y":2800,"width":400,"height":400},
 		{"id":"905cf8ce025fa117","x":3280,"y":3480,"width":400,"height":400,"type":"file","file":"Ресурс/Машинное обучение/Глубокое обучение/Image Augmentation.md"},
