@@ -13,10 +13,10 @@
 >> Производная: $\lambda(w_1 + w_2 + ... +w_d )$
 
 # Регуляризация
-- $l_2$-регуляризационные модели - алгоритмы Ridge Regression - равномерно распределяет вес по всем признакам [[Linear Regression#Minibatch Stochastic Gradient Descent]]
+- $l_2$-регуляризация (Ridge) - равномерно распределяет вес по всем признакам [[Linear Regression#Minibatch Stochastic Gradient Descent]]
 	- Большее значение $\lambda$ характеризует более агрессивное уменьшение весов $\mathbf{w}$
 	- Меньшее $\lambda$, наоборот, слабее накладывает штраф весам $\mathbf{w}$
 > $$\begin{aligned}
 \mathbf{w} & \leftarrow \left(1- \eta\lambda \right) \mathbf{w} - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}} \mathbf{x}^{(i)} \left(\mathbf{w}^\top \mathbf{x}^{(i)} + b - y^{(i)}\right).
 \end{aligned}$$
-- $l_1$-регуляризационные модели - алгоритмы Lasso Regression - концентрирует веса на маленьком наборе признаков, зануляя все остальные веса - эффективный способ *feature selection*.
+- $l_1$-регуляризация (Lasso) - концентрирует веса на маленьком наборе признаков, зануляя все остальные веса - эффективный способ *feature selection*.
