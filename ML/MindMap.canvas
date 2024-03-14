@@ -19,7 +19,7 @@
 		{"id":"d865f3431b3a3a1a","type":"file","file":"Ресурс/Машинное обучение/Линейная алгебра/Матрица - линейная трансформация.md","x":60,"y":80,"width":460,"height":240},
 		{"id":"741da8aca1bdf107","type":"file","file":"Ресурс/Машинное обучение/Линейная алгебра/Композиция матриц.md","x":60,"y":360,"width":460,"height":228},
 		{"id":"966177976373fc2f","type":"file","file":"Ресурс/Машинное обучение/Линейная алгебра/СЛАУ.md","x":680,"y":120,"width":400,"height":160},
-		{"id":"ad92cd0c7cd0becb","type":"file","file":"Инструменты/torch.md","x":1666,"y":2680,"width":400,"height":400},
+		{"id":"ad92cd0c7cd0becb","type":"file","file":"Инструменты/torch/torch.md","x":1666,"y":2680,"width":400,"height":400},
 		{"id":"8bd4d4ce1ba09e36","type":"file","file":"Инструменты/seaborn.md","x":1666,"y":2200,"width":400,"height":400},
 		{"id":"20aa14cdf1708f12","type":"file","file":"Инструменты/plotly.md","x":120,"y":2200,"width":400,"height":400},
 		{"id":"4f59c0a018b57e28","type":"file","file":"Ресурс/Машинное обучение/Линейная алгебра/Трансформации в других пространствах.md","x":680,"y":360,"width":400,"height":200},
@@ -35,8 +35,8 @@
 		{"id":"d93c19c266fca788","x":3600,"y":2800,"width":400,"height":400,"type":"file","file":"Ресурс/Машинное обучение/Generalizations/Generalization (Regression).md"},
 		{"id":"2cc48cc412c3efe5","x":4640,"y":2800,"width":400,"height":400,"type":"file","file":"Ресурс/Энтропия.md"},
 		{"id":"671028a12f7f871b","type":"file","file":"Ресурс/Машинное обучение/Деревья решений.md","x":3080,"y":2800,"width":400,"height":400},
-		{"id":"905cf8ce025fa117","x":3280,"y":3480,"width":400,"height":400,"type":"file","file":"Ресурс/Машинное обучение/Глубокое обучение/Image Augmentation.md"},
-		{"id":"754e64286f5b01ac","x":2680,"y":3480,"width":400,"height":400,"type":"file","file":"Ресурс/Машинное обучение/Глубокое обучение/Компьютерное зрение - Computer Vision.md"}
+		{"id":"905cf8ce025fa117","x":3280,"y":3480,"width":400,"height":400,"type":"file","file":"Ресурс/Машинное обучение/Глубокое обучение/Компьютерное зрение/Image Augmentation.md"},
+		{"id":"754e64286f5b01ac","x":2680,"y":3480,"width":400,"height":400,"type":"file","file":"Ресурс/Машинное обучение/Глубокое обучение/Компьютерное зрение/Компьютерное зрение - Computer Vision.md"}
 	],
 	"edges":[
 		{"id":"7e6862b87393a80c","fromNode":"b9b850f87ee9c68d","fromSide":"bottom","toNode":"51b36779c61930d0","toSide":"top"},

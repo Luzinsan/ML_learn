@@ -1,2 +1,0 @@
-> Dice loss - потеря игральных костей
-> Может рассматриваться как [[Dice Coefficient]], который определяется как (площадь перекрытия площади пересечения): $$\text{Dice coef} = 2*\text{area of overlap area of intersection}$$

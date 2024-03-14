@@ -58,5 +58,43 @@
 🔹 𝗺𝗼𝗿𝗲: Просмотр текстовых файлов по одной странице
 
 
-# Pipenv
-- install <environment_name> - находясь вне виртуальной среды, создаёт новую среду
+# ...
+## Работа из VSCode в Colab
+https://github.com/amitness/colab-connect
+- Прописываем в Colab:
+```python
+!pip install -U git+https://github.com/amitness/colab-connect.git
+from colabconnect import colabconnect
+colabconnect()
+```
+- Соединение с помощью Remote Tunnel. Далее можно настроить конкретную версию python в VSCode, или, перед соединением по туннелю.
+	- `sudo update-alternatives --config python3` - В Colab - позволяет переключить версию python
+	- Установка версий python:
+	```bash
+	sudo apt-get update -y
+	sudo apt-get install python3.11 python3.11-dev
+	```
+	- `sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 1` - Добавить новые версии в таблицу приоритезации
+---
+- `echo 'export VARIABLE="path"' >> ~/.zshrc` - Добавление переменной в PATH (для arch с zsh - в .zshrc)
+- `exec "$SHELL"` - перезапуск shell
+## Pyenv
+- Установка pyenv в arch:
+```zsh
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+```
+- `pyenv install --list` - Узнать все доступные версии
+- `pyenv install 3.7.10` - Установка необходимой версии python
+- `pyenv versions` - Просмотреть установленные версии
+- `pyenv global 3.11.13` - Установить глобальную версию python (но не системную)
+- `pyenv local 3.7.10` - Выбрать версию python по-умолчанию, используемую в текущей директории (и поддиректориях)
+## Poetry
+- `curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -` - установка poetry
+- `yay -S python-pipx` - предварительно установка `pipx`
+- `poetry new <project_name>` - создаёт структуру нового проекта, используя локальную версию python
+- `poetry install` - после редактирование `pyproject.toml` создаёт виртуальную среду (в моём случае: `виртуальная среда mask-rcnn-DvVPX1H8-py3.7 создана в /home/luzinsan/.cache/pypoetry/virtualenvs`)
+	- https://python-poetry.org/docs/dependency-specification/
+- `poetry shell` - активирует текущую виртуальную среду
+- `poetry add <package_name>` - добавить пакет в среду
