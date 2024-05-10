@@ -1,6 +1,6 @@
 # Edge Detection Segmentation
 > Суть: обнаружение ребер объектов (edges) -> определение границ объектов
-> Для этого используются ***фильтры*** и ***свёртки*** (filters и [[convolutions]])
+> Для этого используются ***фильтры*** и ***свёртки*** (filters и [[Convolutions]])
 
 ## Weight matrix
 ### Sobel Operator
