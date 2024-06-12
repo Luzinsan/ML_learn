@@ -85,7 +85,7 @@ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
 echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
 echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 ```
-- `pyenv install --list` - Узнать все доступные версии
+- `pyenv install --list[l]` - Узнать все доступные версии
 - `pyenv install 3.7.10` - Установка необходимой версии python
 - `pyenv versions` - Просмотреть установленные версии
 - `pyenv global 3.11.13` - Установить глобальную версию python (но не системную)
