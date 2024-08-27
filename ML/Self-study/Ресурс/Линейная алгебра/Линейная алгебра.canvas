@@ -1,0 +1,39 @@
+{
+	"nodes":[
+		{"id":"aec1cb0ac708304e","type":"group","x":-460,"y":-370,"width":2660,"height":1310,"color":"4","label":"Линейная алгебра"},
+		{"id":"d6c516096e31aef0","type":"group","x":2480,"y":-240,"width":1856,"height":904,"color":"#473c00","label":"Git"},
+		{"id":"eaec53a951b33d0b","type":"file","file":"Self-study/Ресурс/Линейная алгебра/Собственные числа и вектора.md","x":680,"y":620,"width":400,"height":260},
+		{"id":"741da8aca1bdf107","type":"file","file":"Self-study/Ресурс/Линейная алгебра/Композиция матриц.md","x":60,"y":360,"width":460,"height":228},
+		{"id":"f4d241b0b681c138","type":"file","file":"Self-study/Ресурс/Линейная алгебра/Собственный базис.md","x":1160,"y":605,"width":380,"height":290},
+		{"id":"4f59c0a018b57e28","type":"file","file":"Self-study/Ресурс/Линейная алгебра/Трансформации в других пространствах.md","x":680,"y":360,"width":400,"height":200},
+		{"id":"1c049221aa84bf7e","type":"file","file":"Self-study/Ресурс/Линейная алгебра/Скалярное произведение и двойственность.md","x":1720,"y":183,"width":440,"height":240},
+		{"id":"d865f3431b3a3a1a","type":"file","file":"Self-study/Ресурс/Линейная алгебра/Матрица - линейная трансформация.md","x":60,"y":80,"width":460,"height":240},
+		{"id":"2f46847a344f03c0","type":"file","file":"Self-study/Ресурс/Линейная алгебра/Неквадратные матрицы.md","x":1196,"y":120,"width":400,"height":183},
+		{"id":"966177976373fc2f","type":"file","file":"Self-study/Ресурс/Линейная алгебра/СЛАУ.md","x":680,"y":120,"width":400,"height":160},
+		{"id":"51b36779c61930d0","type":"file","file":"Self-study/Ресурс/Линейная алгебра/Базис векторного пространства.md","x":60,"y":-160,"width":460,"height":205},
+		{"id":"db1b2697e8cbd35c","type":"file","file":"Self-study/Ресурс/Линейная алгебра/Абстрактные векторные пространства.md","x":-380,"y":-190,"width":360,"height":266},
+		{"id":"f8486e6eac8fa0d5","type":"file","file":"Self-study/Ресурс/Линейная алгебра/Векторное произведение в 3D.md","x":1720,"y":-320,"width":440,"height":455},
+		{"id":"6a8a92c616cf07a2","type":"file","file":"Self-study/Ресурс/Линейная алгебра/Векторное произведение в 2D.md","x":1196,"y":-320,"width":400,"height":400},
+		{"id":"4376580f53fbba2c","type":"file","file":"Self-study/Ресурс/Линейная алгебра/Пространство столбцов и ранг.md","x":680,"y":-120,"width":400,"height":200},
+		{"id":"b9b850f87ee9c68d","type":"file","file":"Self-study/Ресурс/Линейная алгебра/Вектор.md","x":60,"y":-320,"width":460,"height":120},
+		{"id":"2935a730a3089f8f","type":"file","file":"Self-study/Ресурс/Линейная алгебра/Определитель.md","x":680,"y":-320,"width":400,"height":160},
+		{"id":"844e04148ac3a4d2","type":"file","file":"Self-study/Инструменты/git.md","x":2540,"y":-180,"width":1720,"height":500}
+	],
+	"edges":[
+		{"id":"7e6862b87393a80c","fromNode":"b9b850f87ee9c68d","fromSide":"bottom","toNode":"51b36779c61930d0","toSide":"top"},
+		{"id":"65ab62b81291809a","fromNode":"51b36779c61930d0","fromSide":"bottom","toNode":"d865f3431b3a3a1a","toSide":"top"},
+		{"id":"dce6a03334abf9c2","fromNode":"d865f3431b3a3a1a","fromSide":"bottom","toNode":"741da8aca1bdf107","toSide":"top"},
+		{"id":"5ca7d812be3e247e","fromNode":"d865f3431b3a3a1a","fromSide":"right","toNode":"2935a730a3089f8f","toSide":"left"},
+		{"id":"9bf829b038b4c7d0","fromNode":"d865f3431b3a3a1a","fromSide":"right","toNode":"4376580f53fbba2c","toSide":"left"},
+		{"id":"a0e1e99756a74d48","fromNode":"d865f3431b3a3a1a","fromSide":"right","toNode":"966177976373fc2f","toSide":"left"},
+		{"id":"4f5db5f057ca828a","fromNode":"4376580f53fbba2c","fromSide":"right","toNode":"2f46847a344f03c0","toSide":"left"},
+		{"id":"8f3d261f9eeb4f61","fromNode":"2f46847a344f03c0","fromSide":"right","toNode":"1c049221aa84bf7e","toSide":"left"},
+		{"id":"36704fb3000f5100","fromNode":"2935a730a3089f8f","fromSide":"right","toNode":"6a8a92c616cf07a2","toSide":"left"},
+		{"id":"c557ecac361803c5","fromNode":"6a8a92c616cf07a2","fromSide":"right","toNode":"f8486e6eac8fa0d5","toSide":"left"},
+		{"id":"57d412a06002e7a2","fromNode":"d865f3431b3a3a1a","fromSide":"right","toNode":"4f59c0a018b57e28","toSide":"left"},
+		{"id":"dab77a66c4114b0b","fromNode":"d865f3431b3a3a1a","fromSide":"right","toNode":"eaec53a951b33d0b","toSide":"left"},
+		{"id":"87f4c40992e816a8","fromNode":"eaec53a951b33d0b","fromSide":"right","toNode":"f4d241b0b681c138","toSide":"left"},
+		{"id":"d7f17e24e93504f9","fromNode":"4f59c0a018b57e28","fromSide":"right","toNode":"f4d241b0b681c138","toSide":"top"},
+		{"id":"fe2464aadb8e3fe9","fromNode":"51b36779c61930d0","fromSide":"left","toNode":"db1b2697e8cbd35c","toSide":"right"}
+	]
+}
