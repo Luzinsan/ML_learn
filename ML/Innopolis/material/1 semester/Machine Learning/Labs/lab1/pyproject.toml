@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "ex1"
+version = "0.1.0"
+description = ""
+authors = ["luzinsan  <luzinsan.a.430-2@e.tusur.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+jupyter = "^1.0.0"
+notebook = "^7.2.1"
+ydata-profiling = "=4.9.0"
+pandas = "^2.2.2"
+scikit-learn = "^1.5.1"
+matplotlib = "^3.9.2"
+category-encoders = "^2.6.3"
+numpy = "<2.0"
+plotly = "^5.23.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
