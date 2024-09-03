@@ -42,3 +42,5 @@
 ---
 
 1. [[The GQM Model]]
+2. [[Hypothesis Testing]]
+3. [[Measurement, concept, definition, fundamentals, representational theory of measurement]]
