@@ -6,8 +6,9 @@ Needs to understand:
 - Their theoretical underpinnings
 
 **Machine learning** 
-- is computer programs (algorithms) that perform a task (solve a problem), which are trained through experience  extracted some insights/features/knowledges  by the data and improve their performance.
+- is computer programs (algorithms) that perform a task (solve a problem), which are trained through experience  extracted some insights/features/knowledge by the data and improve their performance.
 - is a function estimation $\hat{f}$ where we assume a function can maps an observations ($x$) to our targets ($y$) (all from out data)
+- Examples: object detention, instance segmentation, spam detection, disease prediction, whether forecasting, text summarizing, etc. 
 
 $$D = \{(x_i, y_i)\}^N_{i=1}$$
 **Data** - is what we refer to as *experience*
@@ -38,7 +39,7 @@ Based of the type of the label:
 
 There are 2 phase:
 - **Training** phase: $T_r = \{x_i, y_i\}^N_{i=1}$ is train data that we use during train time to *estimate* $\hat{f}(x)$
-- **Assessing** phase: to assess the quality of estimate, we can compute:
+- **Assessing** (evaluation) phase: to assess the quality of estimate, we can compute (with learned model):
 	- $MSE_{T_r} = Ave_{i \in T_r}[y_i - \hat{f}(x_i)]^2$ 
 	- But this is not a reliable approach: 
 		- because we always have just a peace of data that never cover general population
@@ -48,15 +49,16 @@ There are 2 phase:
 	  $MSE_{T_e} = Ave_{i \in T_e}[y_i - \hat{f}(x_i)]^2$ 
 
 2 type of wrong results:
-![[underfitting-overfitting plot.png|300]]
+![[underfitting-overfitting plot.png|300]]![[Overfitting&Underfitting cases.png|340]]
 	- **Underfitting**: $y=\frac{w_0+w_1 x}{f}$ - happens when we have quite *simple model* - train and test error will be large
 	![[Underfitting.png|200]]
-	- **Overfitting**: $y=\frac{w_0 + w_1 x + w_2 x^2 + w_3 x^8}{f}$ - happens when the model (often complex) is performing well on the train data, but is performing bad on the test data, moreover the differences of errors  become greater with time to getting more *complex model* (huge gap between train and test error)
+	- **Overfitting**: $y=\frac{w_0 + w_1 x + w_2 x^2 + w_3 x^8}{f}$ - happens when the model (often complex, but not always) is performing well on the train data, but is performing bad on the test data, moreover the differences of errors  become greater with time to getting more *complex model* (huge gap between train and test error)
 	  ![[Overfitting.png|200]]
 		- Most complex model
 		- Smallest training error
 		- But *largest test error*
 	- We are making a compromise between underfitting and overfitting. In theory of machine learning this decision known as **Bias Variance Tradeoff**
+	- Note: if the problem is simple even weak model can be appropriate and complex model can overfit on this data. Overfitting and underfitting don't *just* depend upon the complexity of the **model** and *also* depend upon of the complexity the **data**
 
 **Bias Variance Tradeoff**
 > https://medium.com/snu-ai/the-bias-variance-trade-off-a-mathematical-view-14ff9dfe5a3c
@@ -70,3 +72,12 @@ $E(y_0 - \hat{f}(x_0))^2 = Var(\hat{f}(x_0)) + [Bias(\hat{f}(x_0))]^2 + Var(\var
 - **Summary**:
 	- Underfitting: bias is very large and variance very small
 	- Overfitting: bias is very small but variance very large
+
+---
+- What exactly does it mean for machine to learn something?
+- Why would you use machine learning in an application such spam filtering?
+- What problems are supervised learning problems?
+- Why is estimating the price of a house, given its features, a regression problem but spam filtering a classification problem?
+- How is supervised machine learning from data similar to function estimation?
+- What are underfitting and overfitting, and how can we detect them?
+- Will a complex model always overfit and a simple model always underfit?
