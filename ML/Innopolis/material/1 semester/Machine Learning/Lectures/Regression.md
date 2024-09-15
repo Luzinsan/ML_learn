@@ -48,7 +48,7 @@ $$\underset{w_0, w_1}{argmin}\space\mathcal{L}(w_0, w_1)$$
 
 > **MSE** is convex: ![[MSE-3D.png|200]]
 > at the *unique minimum* of our loss function, it's "partial" derivative with respect to $w_0$ and $w_1$ will be zero
-> We can find this solution using direct solution that is called as **Least Square Solution**
+> We can find this solution using *direct solution* that is called as **Least Square Solution**
 
 #### Least Square Solution
 *Steps of algorithm:*
