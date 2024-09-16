@@ -119,8 +119,7 @@ $$x^* \in \mathcal{D} \space and\space f(x^*) \le f(y)\text{ for all feasible so
 $$x^* \in \mathcal{D}\text{ and none feasible solution } y \in \mathcal{D}\text{ satisfies } f(y) < f(x^*)$$
 
 - A problem that has (at least) one optimal solution is said to be ==solvable==, otherwise it is called ==unsolvable==
-- An impossible or unbounded problem is never solvable, but there are also possible, bounded and unsolvable, for instance:
-$$min{\frac{1}{x}}\space s.t.\space x > 0 \space gives\space f^*=0\text{ but is unsolvable}$$![[Reciprocal function.png]]
+- An impossible or unbounded problem is never solvable, but there are also possible, bounded and unsolvable, for instance: $$min{\frac{1}{x}}\space s.t.\space x > 0 \space gives\space f^*=0\text{ but is unsolvable}$$![[Reciprocal function.png]]
 ## Problem types
 $$\min_{x \in \mathcal{R}^n}{f(x)}\text{ such that x }\in \mathcal{D}\text{   and  }f^* = \inf{\{f(x) | x \in \mathcal{D}\}}$$
 - Without loss of generality, we can consider only the ==minimization==
@@ -130,3 +129,13 @@ and for *optimal values* (with a double minus sign):
 $$\sup{\{f(x) | x \in \mathcal{D} \subseteq \mathcal{R}^n\} = -\inf\{-f(x)|x \in \mathcal{D} \subseteq \mathcal{R}^n\}}$$
 - The problem of finding an admissible point (without an objective function) is a special case an optimization problem, and can be formally expressed using a constant (or zero) objective function.
 $$\min_{x \in \mathcal{R}^n} 0 \text{ s.t. } x \in \mathcal{D}$$
+## Description of the feasible set - linear problems
+$$\min_{x\in\mathcal{R}^n}f(x)\text{ s.t. }h_i(x)=0\text{ pour }i\in\varepsilon\text{ and }h_i(x) \ge 0\text{ pour }i\in\iota$$
+is called a linear optimization problem when all functions are ==linear or affine==:
+- Objective function: $f(x)=c_1 x_1 + c_2 x_2 + ... + c_n x_n$ (constant term is useless)
+- Constraints: $h_i(x) = a_{i1} x_1 + a_{i2} x_2 + ... + a_{in} x_n - b_i$
+  hence the equivalent formulation
+  $$\min_{x \in \mathcal{R}^n}c^T x\space\space\space\text{   s.t.    }\space\space\space a^T_i x = b_i \text{ for } i \in \varepsilon\text{ and } a^T_i x\ge b_i \text{ for }i\in \iota$$
+  with columns vector $c = (c_1\space c_2 \space ... \space c_n)^T$ and $a_i = (a_{i1} \space a_{i2} \space ... \space a_{in})^T$ defined  $\forall i \in \varepsilon \cup \iota$
+
+
