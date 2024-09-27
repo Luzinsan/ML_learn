@@ -1,13 +1,15 @@
 # Introduction to measurements
-> Measurement is the process by which numbers or symbols are assigned to attributes of entities in the real world in such a way as to describe them according to clearly defined rules.
-> Measuring is the process of attaching values from domain to measurable attributes of an entity.
+> ==Measurement== is the process by which numbers or symbols are assigned to attributes of entities in the real world in such a way as to describe them according to clearly defined rules.
+> ==Measuring== is the process of attaching values from domain to measurable attributes of an entity.
 > We need to restrict based on the context where we are, and based on what we want to achieve.   
 > Measurement is a way to give objectivity, to give the feeling of concreteness to the creating of an immaterial entity
 > Measurement gives perception of the concreteness and allow us to model the world around us.
 
-> Measure is a product of attaching a numerical value to an attribute of an entity for the purpose of to study relationship between entities that exist.
+> ==Measure== is a product of attaching a numerical value to an attribute of an entity for the purpose of to study relationship between entities that exist.
 
 > Measurement is a map/transformations from our world to a world of numbers, then we can perform operational numbers, and then go back to real world and determine the properties of real world.
+
+
 
 
 >  **Measurement is a map from the empirical world to the formal relational world.

@@ -45,3 +45,5 @@
 2. [[Hypothesis Testing]]
 3. [[Measurement, concept, definition, fundamentals, representational theory of measurement]]
 4. [[Measurement scales and functions that can be applied to scales]]
+5. [[Introduction to Experimental Design]]
+6. [[Experimental Design - part 2]] 

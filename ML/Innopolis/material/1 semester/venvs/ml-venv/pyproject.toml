@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "ml-venv"
+version = "0.1.0"
+description = ""
+authors = ["luzinsan  <luzinsan.a.430-2@e.tusur.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+jupyter = "^1.1.1"
+notebook = "^7.2.2"
+numpy = "^2.1.1"
+pandas = "^2.2.3"
+scikit-learn = "^1.5.2"
+matplotlib = "^3.9.2"
+plotly = "^5.24.1"
+sqlalchemy = "^2.0.35"
+seaborn = "^0.13.2"
+category-encoders = "^2.6.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

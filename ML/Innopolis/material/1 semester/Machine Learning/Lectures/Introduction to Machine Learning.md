@@ -50,13 +50,17 @@ There are 2 phase:
 
 2 type of wrong results:
 ![[underfitting-overfitting plot.png|300]]![[Overfitting&Underfitting cases.png|340]]
-	- **Underfitting**: $y=\frac{w_0+w_1 x}{f}$ - happens when we have quite *simple model* - train and test error will be large
+### **Underfitting**
+$$y=\frac{w_0+w_1 x}{f}$$- happens when we have quite *simple model* - train and test error will be large
 	![[Underfitting.png|200]]
-	- **Overfitting**: $y=\frac{w_0 + w_1 x + w_2 x^2 + w_3 x^8}{f}$ - happens when the model (often complex, but not always) is performing well on the train data, but is performing bad on the test data, moreover the differences of errors  become greater with time to getting more *complex model* (huge gap between train and test error)
+### **Overfitting**
+$$y=\frac{w_0 + w_1 x + w_2 x^2 + w_3 x^8}{f}$$
+- happens when the model (often complex, but not always) is performing well on the train data, but is performing bad on the test data, moreover the differences of errors  become greater with time to getting more *complex model* (huge gap between train and test error)
 	  ![[Overfitting.png|200]]
 		- Most complex model
 		- Smallest training error
 		- But *largest test error*
+	
 	- We are making a compromise between underfitting and overfitting. In theory of machine learning this decision known as **Bias Variance Tradeoff**
 	- Note: if the problem is simple even weak model can be appropriate and complex model can overfit on this data. Overfitting and underfitting don't *just* depend upon the complexity of the **model** and *also* depend upon of the complexity the **data**
 
