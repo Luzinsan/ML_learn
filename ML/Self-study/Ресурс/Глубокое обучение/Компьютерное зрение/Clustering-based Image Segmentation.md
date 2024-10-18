@@ -1,5 +1,5 @@
 # Clustering-based Image Segmentation
-[[k-means]]
+[[k-means clustering]]
 Для работы с k-means нужно предварительно:
 - стандартизировать значения в интервал [0,1] 
 - конвертировать в shape`(height*width, channels)`

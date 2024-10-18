@@ -1,3 +1,5 @@
+> Given K
+
 - k - кол-во кластеров
 - Это не [[k-nearest neighbor]]
 
